@@ -1,0 +1,242 @@
+/* ===========================
+   Otome Special GIFT
+   style.css
+=========================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:"M PLUS Rounded 1c",sans-serif;
+  background:linear-gradient(180deg,#fff8fb,#ffeef5,#fff);
+  color:#555;
+  overflow-x:hidden;
+}
+
+.container{
+  width:min(1100px,92%);
+  margin:auto;
+}
+
+section{
+  padding:70px 0;
+}
+
+h1,h2,h3{
+  color:#ff4f87;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+a{
+  text-decoration:none;
+}
+
+button{
+  border:none;
+  cursor:pointer;
+  font-family:inherit;
+}
+
+/* ------------------
+   Hero
+------------------- */
+
+.hero{
+  padding:90px 20px;
+  text-align:center;
+}
+
+.logo{
+  font-size:2.7rem;
+  font-weight:bold;
+  color:#ff4f87;
+  margin-bottom:15px;
+}
+
+.logo span{
+  color:#ff84af;
+}
+
+.catch{
+  font-size:1.1rem;
+  color:#777;
+  margin-bottom:35px;
+}
+
+.hero img{
+  width:260px;
+  margin:auto;
+  filter:drop-shadow(0 12px 25px rgba(0,0,0,.15));
+}
+
+.heroButton{
+  margin-top:35px;
+  display:inline-block;
+  background:#ff5c95;
+  color:white;
+  padding:15px 38px;
+  border-radius:999px;
+  font-size:18px;
+  transition:.3s;
+}
+
+.heroButton:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 25px rgba(255,92,149,.35);
+}
+
+/* ------------------
+   Card
+------------------- */
+
+.card{
+  background:white;
+  border-radius:24px;
+  padding:30px;
+  margin:30px auto;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h2{
+  margin-bottom:18px;
+}
+
+.card p{
+  line-height:1.9;
+}
+/* ------------------
+   Form
+------------------- */
+
+.formBox{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.formBox label{
+  font-weight:bold;
+  color:#ff4f87;
+}
+
+.formBox input,
+.formBox textarea{
+  width:100%;
+  padding:14px 16px;
+  border:2px solid #ffd3e2;
+  border-radius:14px;
+  font-size:16px;
+  outline:none;
+  transition:.25s;
+}
+
+.formBox input:focus,
+.formBox textarea:focus{
+  border-color:#ff5c95;
+  box-shadow:0 0 0 4px rgba(255,92,149,.15);
+}
+
+.formBox textarea{
+  resize:vertical;
+  min-height:120px;
+}
+
+.submitButton{
+  margin-top:10px;
+  background:#ff5c95;
+  color:#fff;
+  padding:16px;
+  border-radius:999px;
+  font-size:18px;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.submitButton:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 28px rgba(255,92,149,.35);
+}
+
+/* ------------------
+   Footer
+------------------- */
+
+footer{
+  text-align:center;
+  padding:45px 20px;
+  color:#888;
+  font-size:14px;
+}
+
+/* ------------------
+   Hearts
+------------------- */
+
+.heart{
+  position:fixed;
+  pointer-events:none;
+  font-size:22px;
+  animation:heartUp 1.5s linear forwards;
+  z-index:9999;
+}
+
+@keyframes heartUp{
+
+  0%{
+    opacity:1;
+    transform:translateY(0) scale(.6);
+  }
+
+  50%{
+    opacity:1;
+    transform:translateY(-120px) scale(1.1);
+  }
+
+  100%{
+    opacity:0;
+    transform:translateY(-220px) scale(1.6);
+  }
+
+}
+/* ------------------
+   Responsive
+------------------- */
+
+@media(max-width:768px){
+
+  .hero{
+    padding:60px 20px;
+  }
+
+  .logo{
+    font-size:2rem;
+  }
+
+  .catch{
+    font-size:1rem;
+  }
+
+  .hero img{
+    width:200px;
+  }
+
+  section{
+    padding:50px 0;
+  }
+
+  .card{
+    padding:22px;
+  }
+
+}
