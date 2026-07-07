@@ -85,7 +85,8 @@ loading.style.display="flex";
 setTimeout(()=>{
 
 loading.style.display="none";
-
+complete.style.display = "block";
+form.style.display = "none";
 complete.style.display="flex";
 
 form.reset();
