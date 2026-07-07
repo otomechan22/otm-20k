@@ -240,3 +240,12 @@ footer{
   }
 
 }
+#complete{
+    display:none;
+    margin-top:30px;
+    text-align:center;
+    background:#fff;
+    border-radius:25px;
+    padding:35px 20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
